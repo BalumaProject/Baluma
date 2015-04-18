@@ -6,14 +6,39 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title><%= Resources.Cadenas.titulo %></title>
     <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,900,700,500' rel='stylesheet' type='text/css' />
-    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/bootstrap-theme.css" rel="Stylesheet" type="text/css" runat="server"/>
+    <link href="~/Styles/bootstrap.css" rel="Stylesheet" type="text/css" runat="server"/>
+    <link href="~/Styles/jquery.mmenu.all.css" rel="Stylesheet" type="text/css" runat="server"/>
+    <link href="~/Styles/productviewgallery.css" rel="Stylesheet" type="text/css" runat="server"/>
+    <link href="~/Styles/slider.css" rel="Stylesheet" type="text/css" runat="server"/>
+    <link href="~/Styles/Site.css" rel="Stylesheet" type="text/css" runat="server"/>
+    <link href="~/Styles/Estilos.css" rel="Stylesheet" type="text/css" runat="server"/>
 </head>
 <body>
-    <header>
-        <div class="logo"><a href="Default.aspx"><img src="Images/logoweb.png" /></a></div>
-        <div><a href="#"><%= Resources.Cadenas.entrar %></a></div>
-    </header>
+    <div class="top_bg">
+        <div class="wrap">
+            <div class="header">
+                <div class="logo"><a href="~/Default.aspx" runat="server"><img src="Images/logoweb.png" /></a></div>
+                <div class="log_reg mi-registro"><a href="#"><%= Resources.Cadenas.entrar %></a></div>
+            </div>
+        </div>
+    </div>
    <asp:ContentPlaceHolder ID="ContenidoPrincipal" runat="server">
    </asp:ContentPlaceHolder>
+   <div class="footer_bg">
+       <div class="wrap">
+            <div class="footer">
+	            <div class="f_nav1">
+		            <ul>
+			            <li><a href="#">Inicio/</a></li>
+			            <li><a href="#">Términos y condiciones /</a></li>
+			            <li><a href="#">Contáctanos</a></li>
+		            </ul>
+		        </div>	
+	        <div class="clear"></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
+
