@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MenuNavegacion.master.cs" Inherits="Baluma.MenuNavegacion" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContenidoPrincipal" runat="server">    
+        <div class="wrap">
+            <div class="header_btm">
+                <div class="menu">
+			        <ul>
+				        <li class="active"><a href="~/Default.aspx" runat="server">Inicio</a></li>
+				        <li><a href="#"><%= Resources.Cadenas.catalogo %></a></li>
+				        <li><a href="#"><%= Resources.Cadenas.about %></a></li>
+				        <li><a href="#"><%= Resources.Cadenas.contacto %></a></li>
+			        </ul>
+                    <div class="clear"></div>
+		        </div>
+                 <div class="header_right">
+		            <ul>
+			            <li><a href="#"><img src="~/Images/cart.png" alt="" runat="server"/>&nbsp &nbsp<span>0</span></a></li>
+		            </ul>
+	            </div>
+	            <div class="clear"></div>
+            </div>
+        </div>
+    <asp:ContentPlaceHolder ID="ContenidoCuerpo" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

@@ -61,7 +61,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Sobre nosotros.
+        ///   Busca una cadena traducida similar a Sobre nosotros ....
         /// </summary>
         internal static string about {
             get {
@@ -75,6 +75,15 @@ namespace Resources {
         internal static string catalogo {
             get {
                 return ResourceManager.GetString("catalogo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contáctenos.
+        /// </summary>
+        internal static string contactenos {
+            get {
+                return ResourceManager.GetString("contactenos", resourceCulture);
             }
         }
         
@@ -102,6 +111,15 @@ namespace Resources {
         internal static string inicio {
             get {
                 return ResourceManager.GetString("inicio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Terminos y condiciones.
+        /// </summary>
+        internal static string terminos {
+            get {
+                return ResourceManager.GetString("terminos", resourceCulture);
             }
         }
         
